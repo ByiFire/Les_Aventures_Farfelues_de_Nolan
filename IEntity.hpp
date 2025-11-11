@@ -1,17 +1,17 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 
-// Classe abstraite pour toutes les entitÈs du jeu
+// Classe abstraite pour toutes les entit√©s du jeu
 class IEntity {
 public:
     virtual ~IEntity() = default;
 
-    // MÈthodes virtuelles pures (= obligatoires pour les classes filles)
-    virtual void update(sf::Time dt) = 0;
+    virtual void update(sf::Time dt) = 0; //Met a jour l'entit√© chaque frame
     virtual void draw(sf::RenderWindow& window) = 0;
     virtual sf::FloatRect getGlobalBounds() const = 0;
 
-    // MÈthodes virtuelles simples
+    // M√©thodes virtuelles simples
     virtual void setPosition(sf::Vector2f pos) = 0;
     virtual sf::Vector2f getPosition() const = 0;
+
 };
