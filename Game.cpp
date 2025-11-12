@@ -1269,8 +1269,7 @@ void Game::setupCredits() {
         "Mon humble personne (Nolan)",
         "",
         "",
-        "MUSIQUE",
-        "Aucune (mais on a essaye)",
+        "",
         "",
         "",
         "REMERCIEMENTS SPECIAUX",
@@ -2242,4 +2241,5 @@ void Game::render() {
     }
 
     window_.display();
+
 }
